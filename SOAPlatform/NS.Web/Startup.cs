@@ -27,6 +27,7 @@ namespace NS.Web
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             NSGlobal.InjectHttpContext(services);
+            NSGlobal.InjectHttpSession(services, 20);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
