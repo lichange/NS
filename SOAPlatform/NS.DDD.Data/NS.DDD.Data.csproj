@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.13" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NS.Component\NS.Component.NHibernate\NS.Component.NHibernate.csproj" />
+    <ProjectReference Include="..\NS.DDD.Core\NS.DDD.Core.csproj" />
+    <ProjectReference Include="..\NS.EmitMapper\NS.EmitMapper.csproj" />
+    <ProjectReference Include="..\NS.Framework\NS.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
