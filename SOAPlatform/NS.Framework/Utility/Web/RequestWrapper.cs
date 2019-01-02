@@ -86,7 +86,7 @@ namespace NS.Framework.Utility
 
         public RequestWrapper LoadSettingXml(string url)
         {
-            settingXml = XElement.Load(Path.Combine(NSWebPath.HostEnv.WebRootPath, url)).ToString();
+            settingXml = XElement.Load(NSWebPath.GetServerPath(url)).ToString();
             return this;
         }
 
