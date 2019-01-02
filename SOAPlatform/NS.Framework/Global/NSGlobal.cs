@@ -37,11 +37,11 @@ namespace NS.Framework.Global
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
-        public static void InjectHttpContext(IServiceCollection services, int minutes)
+        public static void InjectHttpSession(IServiceCollection services, int minutes)
         {
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.IdleTimeout = TimeSpan.FromMinutes(minutes);
             });
             isUseSession = true;
         }
