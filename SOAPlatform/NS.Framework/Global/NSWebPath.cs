@@ -12,7 +12,7 @@ namespace NS.Framework.Global
 
         public static string GetServerPath(string fileName)
         {
-            return Path.Combine(HostEnv.WebRootPath, fileName);
+            return Path.Combine(HostEnv.ContentRootPath, fileName);
         }
     }
 
