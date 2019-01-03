@@ -160,7 +160,7 @@ namespace NS.Component.Utility
         private int _Error = 0;//返回上传状态。 
         private int _MaxSize = 1024 * 1024;//最大单个上传文件 (默认)
         private string _FileType = "jpg;gif;bmp;png";//所支持的上传类型用"/"隔开 
-        private string _SavePath = NSWebPath.HostEnv.WebRootPath;//保存文件的实际路径 
+        private string _SavePath = NSWebPath.HostEnv.ContentRootPath;//保存文件的实际路径 
         private int _SaveType = 0;//上传文件的类型，0代表自动生成文件名 
                                   //  private HtmlInputFile _FormFile;//上传控件。 
         private string _InFileName = "";//非自动生成文件名设置。 
@@ -217,7 +217,7 @@ namespace NS.Component.Utility
         /// </summary>
         public string SavePath
         {
-            set { _SavePath = Path.Combine(NSWebPath.HostEnv.WebRootPath, value); }
+            set { _SavePath = NSWebPath.GetServerPath(value); }
             get { return _SavePath; }
         }
 
@@ -394,7 +394,7 @@ namespace NS.Component.Utility
         /// </summary>
         public string CopyIamgePath
         {
-            set { _CopyIamgePath = Path.Combine(NSWebPath.HostEnv.WebRootPath, value); }
+            set { _CopyIamgePath = NSWebPath.GetServerPath(value); }
         }
 
         #endregion
