@@ -47,6 +47,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NS.Component.JobManage", "N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NS.Component.Quartz", "NS.Component\NS.Component.Quartz\NS.Component.Quartz.csproj", "{F0BC2A3F-A3AC-41C2-89A8-B629CD5416FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A.Cache", "A.Cache", "{3A536E47-7B73-48C7-9768-0A7A03323A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NS.Component.Memcache", "NS.Component\NS.Component.Memcache\NS.Component.Memcache.csproj", "{EE4817F4-E3B4-4298-92B9-150882E9DCAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,10 @@ Global
 		{F0BC2A3F-A3AC-41C2-89A8-B629CD5416FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0BC2A3F-A3AC-41C2-89A8-B629CD5416FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0BC2A3F-A3AC-41C2-89A8-B629CD5416FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4817F4-E3B4-4298-92B9-150882E9DCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4817F4-E3B4-4298-92B9-150882E9DCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4817F4-E3B4-4298-92B9-150882E9DCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4817F4-E3B4-4298-92B9-150882E9DCAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +135,8 @@ Global
 		{6B783F1E-0A45-471C-9DB9-10770D8661CB} = {B8EFE0F4-6A53-44A0-9D5D-A7A4BC329477}
 		{C75913B6-6E63-4BAF-A870-997BEC64B93A} = {6B783F1E-0A45-471C-9DB9-10770D8661CB}
 		{F0BC2A3F-A3AC-41C2-89A8-B629CD5416FB} = {6B783F1E-0A45-471C-9DB9-10770D8661CB}
+		{3A536E47-7B73-48C7-9768-0A7A03323A60} = {B8EFE0F4-6A53-44A0-9D5D-A7A4BC329477}
+		{EE4817F4-E3B4-4298-92B9-150882E9DCAF} = {3A536E47-7B73-48C7-9768-0A7A03323A60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10980CEC-810C-42DA-ACE4-28154634024C}
